@@ -95,6 +95,9 @@ public class Simulation {
         for (Rocket rocket : rockets) {
             launchSuccess = rocket.isLaunch();
             landSuccess = rocket.isLand();
+            if (launchSuccess && landSuccess) {
+                totalBudget += rocket.cost;
+            }
             System.out.println("Launch Success: " + launchSuccess);
             System.out.println("Land Success: " + landSuccess);
             while (!launchSuccess || !landSuccess) {

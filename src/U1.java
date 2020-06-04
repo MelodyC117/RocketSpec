@@ -19,11 +19,11 @@ public class U1 extends Rocket {
 
     public boolean isLaunch() {
         isExploded = rateExplode * (double) (this.cargoWeight / this.cargoLimit);
-        return (isExploded >= randomNumber);
+        return (isExploded < randomNumber);
     };
 
     public boolean isLand() {
         isCrashed = rateCrash * (double) (this.cargoWeight / this.cargoLimit);
-        return (isCrashed >= randomNumber);
+        return (isCrashed < randomNumber);
     };
 }

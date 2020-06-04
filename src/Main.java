@@ -10,10 +10,10 @@ public class Main {
         Simulation sim = new Simulation();
         ArrayList<Item> cargoListP1 = new ArrayList<>();
         ArrayList<Item> cargoListP2 = new ArrayList<>();
-        ArrayList<Rocket> U1P1 = new ArrayList<>();
-        ArrayList<Rocket> U1P2 = new ArrayList<>();
-        ArrayList<Rocket> U2P1 = new ArrayList<>();
-        ArrayList<Rocket> U2P2 = new ArrayList<>();
+        ArrayList<Rocket> U1P1;
+        ArrayList<Rocket> U1P2;
+        ArrayList<Rocket> U2P1;
+        ArrayList<Rocket> U2P2;
 
         // U1 - load all from P1
         cargoListP1 = sim.loadItems(cargoListP1, 1);
